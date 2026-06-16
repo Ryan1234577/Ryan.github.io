@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js" defer></script>
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+</head>
+</head>
+
+<body class="bg-dark text-white">
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Galeria</h2>
+
+    <div class="row g-3">
+      
+
+      <!-- IMAGENS -->
+      <div class="col-4">
+        <img src="https://sublimegrace.com.br/senac/web/imagens/foto7.jpg" class="img-fluid rounded"
+          data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+          Lorem ipsum dolor sit amet consectetur.
+      </div>
+
+      <div class="col-4">
+        <img src="https://sublimegrace.com.br/senac/web/imagens/foto13.jpg" class="img-fluid rounded"
+          data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+           Lorem ipsum dolor sit amet consectetur.
+      </div>
+
+      <div class="col-4">
+        <img src="https://sublimegrace.com.br/senac/web/imagens/foto11.jpg" class="img-fluid rounded"
+          data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+           Lorem ipsum dolor sit amet consectetur.
+      </div>
+
+      <div class="col-4">
+        <img src="https://sublimegrace.com.br/senac/web/imagens/foto18.jpg" class="img-fluid rounded"
+          data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+           Lorem ipsum dolor sit amet consectetur.
+      </div>
+
+      <div class="col-4">
+        <img src="https://sublimegrace.com.br/senac/web/imagens/foto15.jpg" class="img-fluid rounded"
+          data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+           Lorem ipsum dolor sit amet consectetur.
+      </div>
+
+      <div class="col-4">
+        <img src="https://sublimegrace.com.br/senac/web/imagens/foto16.jpg" class="img-fluid rounded"
+          data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+           Lorem ipsum dolor sit amet consectetur.
+      </div>
+      <div class="col-4">
+        <img src="https://sublimegrace.com.br/senac/web/imagens/foto53.jpg" class="img-fluid rounded"
+          data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+           Lorem ipsum dolor sit amet consectetur.
+      </div>
+
+      <div class="col-4">
+        <img src="https://sublimegrace.com.br/senac/web/imagens/foto54.jpg" class="img-fluid rounded"
+          data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+           Lorem ipsum dolor sit amet consectetur.
+      </div>
+
+      <div class="col-4">
+        <img src="https://sublimegrace.com.br/senac/web/imagens/foto55.jpg" class="img-fluid rounded"
+          data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+           Lorem ipsum dolor sit amet consectetur.
+      </div>
+      <!-- MODAL -->
+      <div class="modal fade" id="modalImagem">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-0">
+
+            <div class="modal-body text-center">
+              <img id="imgModal" class="img-fluid rounded">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script>
+      function abrirModal(src) {
+        document.getElementById("imgModal").src = src;
+      }
+    </script>
+
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>aula bootstrap Modal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+</head>
+
+<body class="bg-dark text-white">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Galeria de imagens</h2>
+
+        <!-- Carousel -->
+        <div id="meuCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="4"></button>
+            </div>
+
+            <!-- Imagens -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://sublimegrace.com.br/senac/web/imagens/foto1.jpg" class="d-block w-100"
+                        data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae libero laboriosam itaque.
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://sublimegrace.com.br/senac/web/imagens/foto17.jpg" class="d-block w-100"
+                        data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae libero laboriosam itaque.
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://sublimegrace.com.br/senac/web/imagens/foto44.jpg" class="d-block w-100"
+                        data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae libero laboriosam itaque.
+                </div>
+                <div class="carousel-item">
+                    <img src="https://sublimegrace.com.br/senac/web/imagens/foto41.jpg" class="d-block w-100"
+                        data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae libero laboriosam itaque.
+                </div>
+                 <div class="carousel-item">
+                    <img src="https://sublimegrace.com.br/senac/web/imagens/foto19.jpg" class="d-block w-100"
+                        data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="abrirModal(this.src)">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae libero laboriosam itaque.
+                </div>
+            </div>
+
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#meuCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#meuCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalImagem" title="Titulo Modal">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-body text-center">
+                        <img id="imgModal" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function abrirModal(src) {
+            document.getElementById("imgModal").src = src;
+        }
+    </script>
+</body>
+
+</html>
